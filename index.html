@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <title>Decryptyx | Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-container">
+        <!-- Sidebar start -->
+        <div class="form-sidebar">
+          <div class="step active">
+            <div class="circle">1</div>
+            <div class="step-content">
+              <span>Step 1</span>
+              <b>Client Info</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="step-content">
+              <span>Step 2</span>
+              <b>Select Service Type</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="step-content">
+              <span>Step 3</span>
+              <b>Additional Services</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">4</div>
+            <div class="step-content">
+              <span>Step 4</span>
+              <b>Payment Summary</b>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar end -->
+
+        <!-- * Step 1 start -->
+        <div class="stp step-1">
+          <div class="header">
+            <h1 class="title">Personal info</h1>
+            <p class="exp">
+              Please provide your name, company, email address, and phone number.
+            </p>
+          </div>
+          <form>
+            <div class="label">
+              <label for="name">Name</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="name"
+              placeholder="e.g. John Doe"
+            />
+            <div class="label">
+              <label for="name">Company</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="name"
+              placeholder="Or include your name"
+            />
+            <div class="label">
+              <label for="email">Email Address</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="email"
+              placeholder="e.g. johndoe959@lorem.com"
+            />
+            <div class="label">
+              <label for="phone">Phone Number</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="tel"
+              id="phone"
+              placeholder="e.g. +1 234 567 890"
+            />
+          </form>
+          <div class="btns">
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 1 end -->
+
+        <!-- * Step 2 start -->
+        <div class="stp step-2">
+          <div class="header">
+            <h1 class="title">Select your plan</h1>
+            <p class="exp">You have the option of monthly or yearly billing.</p>
+          </div>
+          <form>
+            <div class="plan-card selected">
+              <img src="./images/icon-cube.png" alt="arcade" width="32" height="32" />
+              <div class="plan-info chosen">
+                <b>Basic Plan</b>
+                <span class="plan-priced">$199/month</span>
+              </div>
+            </div>
+            <div class="plan-card">
+              <img src="./images/icon-badge.png" alt="arcade" width="32" height="32" />
+              <div class="plan-info">
+                <b>Standard Plan</b>
+                <span class="plan-priced">$499/month</span>
+              </div>
+            </div>
+            <div class="plan-card">
+              <img src="./images/icon-crown.png" alt="arcade" width="32" height="32" />
+              <div class="plan-info">
+                <b>Premium Plan</b>
+                <span class="plan-priced">$999/month</span>
+              </div>
+            </div>
+          </form>
+          <div class="switcher">
+            <p class="monthly sw-active">Monthly</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p class="yearly">Yearly</p>
+          </div>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 2 end -->
+
+        <!-- * Step 3 start -->
+        <div class="stp step-3">
+          <div class="header">
+            <h1 class="title">Choose additional services</h1>
+            <p class="exp">Additional services can improve analytic results and business efficiency.</p>
+          </div>
+          <form>
+            <div class="box" data-id="1">
+              <input type="checkbox" id="online" />
+              <div class="description">
+                <label for="online">Advanced Predictive Analysis</label>
+                <small>Use historical data to predict future trends and outcomes for better decision-making</small>
+              </div>
+              <p class="price">+$500</p>
+            </div>
+            <div class="box" data-id="2">
+              <input type="checkbox" id="larger" />
+              <div class="description">
+                <label for="larger">Live Dashboard Development</label>
+                <small>Continuous updates to custom made dashboards to meet specific business needs and KPIs</small>
+              </div>
+              <p class="price">+$800</p>
+            </div>
+            <div class="box" data-id="3">
+              <input type="checkbox" id="profile" />
+              <div class="description">
+                <label for="profile">Data Training Workshops</label>
+                <small>Train your team on the best data practices and how to leverage data for business growth</small>
+              </div>
+              <p class="price">+$800</p>
+            </div>
+            <div class="box" data-id="4">
+                <input type="checkbox" id="profilexe" />
+                <div class="description">
+                  <label for="profilexe">Comprehensive Market Analysis</label>
+                  <small>In-depth analysis of market trends, competitors, customer behavior to inform strategic decisions</small>
+                </div>
+              <p class="price">+$1000</p>
+            </div>
+          </form>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 3 end -->
+
+        <!-- * Step 4 start -->
+        <div class="stp step-4">
+          <div class="header">
+            <h1 class="title">Finishing up</h1>
+            <p class="exp">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+          <div class="selection-box">
+            <div class="selection-container">
+              <div class="selected-plan">
+                <p class="plan-name">Basic Plan</p>
+                <p class="plan-price">$199/mo</p>
+              </div>
+              <hr />
+              <div class="addons">
+                <template>
+                  <div class="selected-addon">
+                    <span class="service-name">Standard Plan</span>
+                    <span class="servic-price">+$499/mo</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <p class="total">Total (per month) <b>+$1000/mo</b></p>
+          </div>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+        <div class="stp step-5">
+          <img src="./images/icon-thank-you.png" alt=""  width="75" height="75"/>
+          <div class="header">
+            <h1 class="title">Thank you!</h1>
+            <p class="exp">
+              <p class="exp">Thank You for Confirming Your Service Plan!</p>
+              <p class="exp">You will receive a detailed quotation via email, which includes the charges for any additional services you have selected.</p>
+              <p class="exp">If you need any support or clarification, please feel free to reach out to us at:</p>
+              <p class="exp"><strong>Email:</strong> <a href="mailto:decryptedanalyx@outlook.com">decryptedanalyx@outlook.com</a></p>
+              <p class="exp"><a href="https://github.com/Davedigital9?tab=repositories">@Davedigital</a></p>
+            </p>
+          </div>
+          <button class="next-stp"></button>
+        </div>
+        <!-- Step 5 end -->
+      </div>
+    </div>
+    
+  </body>
+</html>
