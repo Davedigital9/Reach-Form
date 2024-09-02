@@ -8,6 +8,9 @@ The Business Service Plan is a responsive multi-step form project that helps bus
 
 Check out the live demo of the project [here](https://business-serive-plan.vercel.app/).
 
+![Desktop view of the Business Service Plan](design/desktop-view.png)
+![Mobile view of the Business Service Plan](design/mobile-view.jpg)
+
 ## Table of Contents
 
 - [Features](#features)
